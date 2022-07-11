@@ -1,7 +1,6 @@
-# Deck GL Layer for PMtiles
+# deck,gl layer for pmtiles
 
-## TODDO
-
+## TODO
 - [x] Get it to work
 - [ ] Build simple example
 - [ ] Convert to typescript
