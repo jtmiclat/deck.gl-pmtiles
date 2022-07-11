@@ -1,15 +1,22 @@
 {
   "name": "deck.gl-pmtiles",
+  "repository": "https://github.com/jtmiclat/deck.gl-pmtiles",
   "version": "1.0.0",
   "description": "Deck.GL Layers for pmtiles",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild  index.js --bundle --outdir=dist --sourcemap"
   },
   "author": "Jt Miclat",
   "license": "MIT",
   "dependencies": {
     "deck.gl": "^8.8.3",
     "pmtiles": "^1.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.49"
   }
 }
