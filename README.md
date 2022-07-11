@@ -4,7 +4,7 @@ A work in progress deck.gl layer for accessing pmtiles.
 
 ## Usage
 
-Pass data which is a url to a public pmtiles set that accept http range header
+Pass data which is a url to a public pmtiles file that accept http range requests
 
 ```jsx
 <DeckGL
@@ -29,6 +29,7 @@ Pass data which is a url to a public pmtiles set that accept http range header
 - [x] Get it to work
 - [x] Build simple example
 - [ ] Convert to typescript
+- [ ] Error for when URL does not accept range request
 - [ ] Tests
 - [ ] Deploy as package
 
