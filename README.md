@@ -32,7 +32,6 @@ It is probably better to host pmtiles behind a serverless function w/ caching in
 
 - [x] Get it to work
 - [x] Build simple example
-- [ ] Convert to typescript
 - [ ] Error for when URL does not accept range request
 - [ ] Tests
 - [x] Deploy as package
