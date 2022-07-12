@@ -35,7 +35,7 @@ It is probably better to host pmtiles behind a serverless function w/ caching in
 - [ ] Convert to typescript
 - [ ] Error for when URL does not accept range request
 - [ ] Tests
-- [ ] Deploy as package
+- [x] Deploy as package
 
 ## Read more about the tech
 
