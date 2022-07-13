@@ -1,4 +1,4 @@
-# deck,gl layer for pmtiles
+# deck.gl layer for pmtiles
 
 A proof of concept deck.gl layer for accessing pmtiles.
 
