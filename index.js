@@ -48,4 +48,4 @@ export class PMTilesLayer extends MVTLayer {
     });
   }
 }
-export default PMTiles;
+export default PMTilesLayer;

@@ -4,6 +4,17 @@ import { Map as StaticMap, MapProvider } from "react-map-gl";
 import maplibregl from "maplibre-gl";
 import PMTilesLayer from "deck.gl-pmtiles";
 
+const layer = new PMTilesLayer({
+  id: "pmtiles",
+  data: "https://protomaps-static.sfo3.digitaloceanspaces.com/mantle-trial.pmtiles",
+  filled: true,
+  lineWidthMinPixels: 1,
+  pointRadiusMinPixels: 4,
+  getPointRadius: 10,
+  getFillColor: [255, 0, 0],
+  getLineColor: [0, 255, 0],
+  pickable: true,
+});
 const Map = ({ props }) => {
   const [viewstate, setViewstate] = useState({
     latitude: 12.473718352618263,
@@ -12,23 +23,11 @@ const Map = ({ props }) => {
     bearing: 0,
     pitch: 0,
   });
-
+  console.dir(layer);
   return (
     <div style={{ position: "relative", height: "100%", width: "100%" }}>
       <DeckGL
-        layers={[
-          new PMTilesLayer({
-            id: "pmtiles",
-            data: "https://protomaps-static.sfo3.digitaloceanspaces.com/mantle-trial.pmtiles",
-            filled: true,
-            lineWidthMinPixels: 1,
-            pointRadiusMinPixels: 4,
-            getPointRadius: 10,
-            getFillColor: [255, 0, 0],
-            getLineColor: [0, 255, 0],
-            pickable: true,
-          }),
-        ]}
+        layers={[layer]}
         initialViewState={viewstate}
         onViewStateChange={({ viewState }) => setViewstate(viewState)}
         controller={true}

@@ -17,7 +17,7 @@
   "author": "Jt Miclat",
   "license": "MIT",
   "peerDependencies": {
-    "deck.gl": "^8.8.3",
+    "deck.gl": "8.8.4",
     "pmtiles": "^1.1.0"
   },
   "devDependencies": {
