@@ -1,7 +1,7 @@
 import { MVTLayer } from "deck.gl";
 import { PMTiles } from "pmtiles";
 
-export default class PMTilesLayer extends MVTLayer {
+export class PMTilesLayer extends MVTLayer {
   static layerName = "PMTilesLayer";
   async _updateTileData() {
     let data = this.props.data;
@@ -48,3 +48,4 @@ export default class PMTilesLayer extends MVTLayer {
     });
   }
 }
+export default PMTiles;
