@@ -1,6 +1,6 @@
 # deck,gl layer for pmtiles
 
-A work in progress deck.gl layer for accessing pmtiles.
+A proof of concept deck.gl layer for accessing pmtiles.
 
 ## Usage
 
@@ -26,15 +26,7 @@ Pass data which is a url to a public pmtiles file that accept http range request
 
 ### Notes
 
-It is probably better to host pmtiles behind a serverless function w/ caching in production. The goal of this repo is to have an easy way to access pmtiles for deck.gl application. These application are focused on data viz use case and have a different access pattern than other mapping applications.
-
-## TODO
-
-- [x] Get it to work
-- [x] Build simple example
-- [ ] Error for when URL does not accept range request
-- [ ] Tests
-- [x] Deploy as package
+It is probably better to host pmtiles behind a serverless function w/ caching in production. The goal of this repo is to have an easy way to access pmtiles for deck.gl application.
 
 ## Read more about the tech
 
