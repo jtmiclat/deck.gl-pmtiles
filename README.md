@@ -1,10 +1,13 @@
 # deck.gl layer for pmtiles
 
+
 A proof of concept deck.gl layer for accessing pmtiles.
+
+Checkout https://github.com/Matico-Platform/deck.gl-pmtiles if you need a better supported package! 
 
 ## Usage
 
-Pass data which is a url to a public pmtiles file that accept http range requests
+Pass url to a public pmtiles file that accept http range requests
 
 ```jsx
 <DeckGL
@@ -32,3 +35,4 @@ It is probably better to host pmtiles behind a serverless function w/ caching in
 
 - [PMtiles](https://github.com/protomaps/PMTiles)
 - [deck.gl](https://github.com/vis.gl/vis.gl)
+- [deck.gl-pmtiles](https://github.com/Matico-Platform/deck.gl-pmtiles)
